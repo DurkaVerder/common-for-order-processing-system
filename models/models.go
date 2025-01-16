@@ -67,3 +67,9 @@ type HistoryOrder struct {
 	List      []StatusOrder `json:"list"`
 	CreatedAt time.Time     `json:"created_at"`
 }
+
+type Notification struct {
+	To      string `json:"to"`
+	Subject string `json:"subject"`
+	Body    string `json:"body"`
+}
