@@ -40,6 +40,7 @@ type Claims struct {
 type Order struct {
 	Id          int       `json:"id,omitempty"`
 	UserId      int       `json:"user_id"`
+	Status      string    `json:"status"`
 	TotalAmount int       `json:"total_amount"`
 	CreatedAt   time.Time `json:"created_at"`
 	UpdateAt    time.Time `json:"updated_at"`
