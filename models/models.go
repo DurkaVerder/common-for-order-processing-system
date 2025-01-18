@@ -74,3 +74,10 @@ type Notification struct {
 	Subject string `json:"subject"`
 	Body    string `json:"body"`
 }
+
+type DataForNotify struct {
+	Event     string `json:"event"`
+	OrderId   int    `json:"order_id"`
+	Status    string `json:"status"`
+	UserEmail string `json:"user_email"`
+}
