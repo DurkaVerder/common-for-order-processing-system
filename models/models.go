@@ -76,7 +76,8 @@ type Notification struct {
 }
 
 type DataForNotify struct {
-	Event   string `json:"event"`
-	OrderId int    `json:"order_id"`
-	Status  string `json:"status"`
+	Event     string `json:"event"`
+	OrderId   int    `json:"order_id"`
+	UserEmail string `json:"user_email"`
+	Status    string `json:"status"`
 }
