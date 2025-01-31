@@ -41,7 +41,7 @@ type Order struct {
 	Id          int       `json:"id,omitempty"`
 	UserId      int       `json:"user_id"`
 	Status      string    `json:"status"`
-	TotalAmount int       `json:"total_amount"`
+	TotalAmount float64   `json:"total_amount"`
 	CreatedAt   time.Time `json:"created_at"`
 	UpdateAt    time.Time `json:"updated_at"`
 }
@@ -76,8 +76,7 @@ type Notification struct {
 }
 
 type DataForNotify struct {
-	Event     string `json:"event"`
-	OrderId   int    `json:"order_id"`
-	Status    string `json:"status"`
-	UserEmail string `json:"user_email"`
+	Event   string `json:"event"`
+	OrderId int    `json:"order_id"`
+	Status  string `json:"status"`
 }
